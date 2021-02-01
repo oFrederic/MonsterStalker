@@ -19,6 +19,13 @@ app.get('/api/monster/:id', async (req, res) => {
   res.send(data);
 });
 
+app.delete('/api/monster/:id', async (req, res) => {
+  const id = req.params.id;
+  console.log(id);
+  await knex('monster').where('id', id).del();
+  res.sendStatus(200);
+});
+
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`server running on port: ${port}`);
