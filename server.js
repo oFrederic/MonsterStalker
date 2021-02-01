@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 app.use(express.static('./client/index.html'));
-const knex = require('./knex');
+const knex = require('./db/knex');
 
 app.get('/api/monster', async (req, res) => {
   const data = await knex.select().table('monster');

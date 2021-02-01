@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  background-color: bisque;
+}
+
+p {
+  font-size: large;
+}
+
+span {
+  color: brown;
+}

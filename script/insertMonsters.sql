@@ -1,4 +1,0 @@
-INSERT INTO monster (name, elements, description, resistances, weaknesses) VALUES
-('Behemoth', 'fire', 'A powerful beast from another world. Its large horns and muscular frame defy nature. Unique strategies are required to battle it.', 'fire', 'water'),
-('Deviljho', 'dragon', 'A monster that must feed constantly and will devour anything in its path, even feeding on the largest of monsters with its massive jowls.', 'dragon', 'ice'),
-('Diablos', 'earth', 'The apex monster of the Wildspire Waste.\nA menacing, territorial beast that lurks underground.\nLoud noises will cause it to lunge out of the sand in search of prey.', 'earth', 'electricity');
