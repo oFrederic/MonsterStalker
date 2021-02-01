@@ -1,12 +1,9 @@
-exports.seed = function (knex, Promise) {
-  // Deletes ALL existing entries
+exports.seed = function (knex) {
   return knex('monster')
     .del()
     .then(function () {
-      // Inserts seed entries
       return knex('monster').insert([
         {
-          id: 1,
           name: 'Bazelgeuse',
           elements: 'fire',
           description:
@@ -15,7 +12,6 @@ exports.seed = function (knex, Promise) {
           weaknesses: 'water',
         },
         {
-          id: 2,
           name: 'Behemoth',
           elements: 'fire',
           description: 'A powerful beast from another world.',
@@ -23,7 +19,6 @@ exports.seed = function (knex, Promise) {
           weaknesses: 'water',
         },
         {
-          id: 3,
           name: 'Deviljho',
           elements: 'dragon',
           description:
@@ -32,7 +27,6 @@ exports.seed = function (knex, Promise) {
           weaknesses: 'ice',
         },
         {
-          id: 4,
           name: 'Diablos',
           elements: 'earth',
           description: 'The apex monster of the Wildspire Waste.',

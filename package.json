@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r dotenv/config server.js",
-    "seed": "knex seed:run"
+    "seed": "knex seed:run",
+    "latest": "knex migrate:latest",
+    "rollback": "knex migrate:rollback"
   },
   "repository": {
     "type": "git",
