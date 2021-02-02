@@ -14,6 +14,7 @@ This is a very simple API populate with 5 monsters for now
 - Create a basic/simple frontend
 
 <h2>Key learnings</h2>
+
 - CRUD
 - Express
 - Knez

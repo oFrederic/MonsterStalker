@@ -26,12 +26,24 @@ app.delete('/api/monster/:id', async (req, res) => {
   res.sendStatus(200);
 });
 
-// app.patch('/api/monster/:id', async (req, res) => {
-//   const id = req.params.id;
-//   const updateObj = req.body;
-// });
+app.patch('/api/monster/:id', async (req, res) => {
+  const id = req.params.id;
+  const updateObj = req.body;
 
-app.post('/api/monster/:id', async (req, res) => {});
+  await knex('monster').where({ id: id }).update(updateObj);
+  res.sendStatus(200);
+});
+
+app.post('/api/monster/', async (req, res) => {
+  console.log(req.body);
+  if (req.body) {
+    await knex('monster').insert(req.body);
+    res.sendStatus(200);
+    return;
+  }
+
+  res.sendStatus(404);
+});
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
