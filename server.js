@@ -26,6 +26,13 @@ app.delete('/api/monster/:id', async (req, res) => {
   res.sendStatus(200);
 });
 
+// app.patch('/api/monster/:id', async (req, res) => {
+//   const id = req.params.id;
+//   const updateObj = req.body;
+// });
+
+app.post('/api/monster/:id', async (req, res) => {});
+
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`server running on port: ${port}`);

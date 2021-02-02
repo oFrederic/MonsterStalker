@@ -1,12 +1,16 @@
 body {
   text-align: center;
 }
+h1,
+h2 {
+  color: #03312e;
+}
 
 header {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 100px;
-  background-color: bisque;
+  background-color: #009f93;
 }
 
 p {
@@ -14,5 +18,8 @@ p {
 }
 
 span {
-  color: brown;
+  color: #03312e;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
 }
